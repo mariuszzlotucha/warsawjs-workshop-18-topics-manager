@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 
 export class Title extends Component {
 	render() {
+		const {loggedUser, userName} = this.props;
+		const welcome = loggedUser && `Wecome,login ${userName}`;
+
 		return (
 		  <section className="section">
 			  <div className="container">
@@ -11,7 +14,7 @@ export class Title extends Component {
 			  				<h1 className="title">WarsawJS Workshop: Topics Manager</h1>
 			  			</div>
 			  			<div className="navbar-end">
-			  				<h2 className="subtitle">Wecome,login</h2>
+			  				<h2 className="subtitle">{welcome}</h2>
 			  			</div>
 			  		</div>
 			  	</nav>
