@@ -1,19 +1,18 @@
-import React, {Component} from 'react';
-import 'bulma';
+import React, { Component } from "react";
+import "bulma";
 
-import {Title} from './Title';
-import {Input} from './Input';
-import {Cards} from './Cards';
+import { Title } from "./Title";
+import { Input } from "./Input";
+import { Cards } from "./Cards";
 
 export class App extends Component {
 	render() {
 		return (
 			<div>
-				<Title isAnonymous={false} name='testowy' />
+				<Title isAnonymous={false} name="testowy" />
 				<Input />
 				<Cards />
-		</div>
-		)
-		
+			</div>
+		);
 	}
 }
