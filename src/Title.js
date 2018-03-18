@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-export const Title = (props) => {
-	return (
+export class Title extends Component {
+	render() {
+		return (
 		  <section className="section">
 			  <div className="container">
 			  	<nav className="navbar">
@@ -17,4 +18,5 @@ export const Title = (props) => {
 			  </div>
 			</section>
 	);
+	}
 }

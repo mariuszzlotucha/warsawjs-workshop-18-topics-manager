@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-export const Cards = (props) => {
-	return (
+export class Cards extends Component {
+	render() {
+		return (
 		<section className="section">
   	<div className="container">
   		<div className="columns">
@@ -67,5 +68,7 @@ export const Cards = (props) => {
   		</div>
   	</div>
   </section>
+	
 	);
+	}
 }
