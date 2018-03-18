@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 export class Title extends Component {
 	render() {
 		const {loggedUser, userName} = this.props;
-		const welcome = loggedUser && `Wecome,login ${userName}`;
+		const welcome = loggedUser && `Wecome, ${userName}`;
 
 		return (
 		  <section className="section">

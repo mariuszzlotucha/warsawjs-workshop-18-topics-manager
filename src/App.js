@@ -9,7 +9,7 @@ export class App extends Component {
 	render() {
 		return (
 			<div>
-				<Title />
+				<Title loggedUser={true} userName='testowy' />
 				<Input />
 				<Cards />
 		</div>
