@@ -9,7 +9,7 @@ export class App extends Component {
 	render() {
 		return (
 			<div>
-				<Title loggedUser={true} userName='testowy' />
+				<Title isAnonymous={false} name='testowy' />
 				<Input />
 				<Cards />
 		</div>

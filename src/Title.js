@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 
 export class Title extends Component {
 	render() {
-		const {loggedUser, userName} = this.props;
-		const welcome = loggedUser && `Wecome, ${userName}`;
+		const {isAnonymous, name} = this.props;
+		const welcome = !isAnonymous && `Wecome, ${name}`;
 
 		return (
 		  <section className="section">
